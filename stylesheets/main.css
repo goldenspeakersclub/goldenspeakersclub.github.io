@@ -54,36 +54,143 @@ table {
     border-spacing: 0;
 }
 
-/* header */
+/* animations */
 
-.head {
+@keyframes backCol {
+    0% {
+        background: #ffffff;
+    }
+    25% {
+        background: #e6e6e6;
+    }
+    50% {
+        background: #b3b3b3;
+    }
+    75% {
+        background: #8c8c8c;
+    }
+    100% {
+        background: #666666;
+    }
+}
+
+@-webkit-keyframes backCol {
+    0% {
+        background: #ffffff;
+    }
+    25% {
+        background: #e6e6e6;
+    }
+    50% {
+        background: #b3b3b3;
+    }
+    75% {
+        background: #8c8c8c;
+    }
+    100% {
+        background: #666666;
+    }
+}
+
+/* webpage */
+
+html{
+    height: 1200px;
+}
+
+/* links */
+
+a {
+    color: black; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* header */ 
+
+.heading {
     width: 100%;
-    height: 5%;
     overflow: hidden;
+    padding-bottom: 20px;
+    border-bottom: 0.01px solid grey;
 }
 
 .logo {
     float: left;
     text-align: center;
     margin-top: 2.5%;
-    width: 275px;
+    margin-left: 2.5%;
+    width: 20%;
     padding-left: 5%; 
-
 }
+
 ul {
-    margin-top: 2.5%;
-    padding-top: 50px;
+    margin-top: 3%;
+    padding-top: 2%;
     list-style: none;
     text-align: center;
     float: left;
-    width: 50%;
+    width: 45%;
 }
 
 .nav li {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 200;
     text-transform: uppercase;
+    letter-spacing: 1.5px;
     list-style: none;
     display: inline-block;
     vertical-align: bottom;
     margin: 0 1%;
 }
+
+/* body events */
+
+.container {
+    width: 100%;
+    height: 45%;
+    padding-top: 40px;
+}
+
+/* clearfix for body events */
+    
+.container:after{
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.event {
+    float: left;
+    width: 20%;
+    margin: 0 2% 0 2%;
+    border-left: 2px dotted #a6a6a6;
+}
+
+.event1 {
+    margin-left: 12.5%;
+}
+
+.event3 {
+    margin-right: 12.5%;
+}
+
+/* event titles */
+
+.event {
+    padding-left: 1%;
+    font-family: 'Questerial', sans-serif;
+    font-weight: 100;
+    font-size: 2vw;
+}
+
+.date {
+    font-size: 2vh;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
