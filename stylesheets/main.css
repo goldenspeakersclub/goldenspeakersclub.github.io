@@ -142,12 +142,12 @@ html {
 
 /* links */
 
-.top-half a {
+a {
     color: black;
     text-decoration: none;
 }
 
-.top-half a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -178,7 +178,7 @@ html {
     padding-right: 2.5%;
 }
 
-ul {
+.nav {
     margin-top: 4%;
     list-style: none;
     text-align: center;
@@ -193,9 +193,9 @@ ul {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     list-style: none;
+    margin: 0 1%;
     display: inline-block;
     vertical-align: bottom;
-    margin: 0 1%;
 }
 
 
@@ -265,9 +265,9 @@ ul {
 }
 
 tr {
-    border-bottom: 0.05px solid;
+    border-bottom: #b3b3b3 0.1em solid;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 1.3vw;
 }
 
@@ -292,7 +292,7 @@ tr:last-child {
 }
 
 
-/* clearfix for bottomg half */
+/* clearfix for bottom half */
 
 .bot-half:after {
     content: " ";
@@ -301,14 +301,56 @@ tr:last-child {
     clear: both;
 }
 
-.email {
-    height: 15%;
-    margin: 2% 5% 2% 5%;
+
+/* footer */
+
+.footer {
     text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 22%;
+    background-color: #f2f2f2;
 }
 
-.social {
-    height: 15%;
-    margin: 2% 5% 2% 5%;
-    text-align: center;
+.email {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 100;
+    margin-top: 1%;
+}
+
+.email-enter {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 100;
+    margin-top: 1%;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border: white 2px solid;
+    background-color: #f2f2f2;
+}
+
+input {
+    border: none;
+    border-bottom: black 2px solid;
+    height: 30px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.follow-us {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: 1.5%;
+}
+
+.footer .icons {
+    margin-top: 3vh
 }
