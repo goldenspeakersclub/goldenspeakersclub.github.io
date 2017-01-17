@@ -135,8 +135,12 @@ table {
     border-spacing: 0;
 }
 
+
+/* background js */
+
+body,
 html {
-    height: 100vh;
+    height: 100%;
 }
 
 
@@ -155,6 +159,7 @@ a:hover {
 /* header */
 
 .heading {
+    background-color: #ffffff;
     width: 100%;
     overflow: hidden;
     padding-bottom: 20px;
@@ -220,52 +225,33 @@ a:hover {
 }
 
 
-/* events boxes */
+/* body of events */
 
-.event {
+.next {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.6vw;
+    font-weight: 100;
+    margin-left: 25%;
     position: relative;
-    top: 40%;
+    top: 30%;
     transform: translateY(-50%);
     float: left;
-    width: 20%;
-    margin: 0 2.5% 0 2.5%;
-    border-left: 2px dotted #a6a6a6;
+    height: 40%;
 }
-
-.event1 {
-    margin-left: 15%;
-}
-
-
-/* event titles */
-
-.event-title {
-    margin-left: 2%;
-    font-family: 'Questerial', sans-serif;
-    font-weight: 100;
-    font-size: 2vw;
-}
-
-.date {
-    font-size: 1vw;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 2px;
-    color: #ffc266;
-}
-
-
-/* event-schedule tables */
 
 .schedule {
     margin-top: 5%;
-    margin-left: 2%;
+    margin-left: 60%;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 10%;
+}
+
+.time {
+    color: #b3b3b3;
+    padding: 12px;
 }
 
 tr {
-    border-bottom: #b3b3b3 0.1em solid;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     font-size: 1.3vw;
@@ -275,30 +261,10 @@ tr:last-child {
     border: none;
 }
 
-.time {
-    color: #b3b3b3;
-    padding: 12px;
-}
-
-
-/* bottom half */
-
-.bot-half {
-    width: 100%;
-    height: 55%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #4d4d4d;
-}
-
-
-/* clearfix for bottom half */
-
-.bot-half:after {
-    content: " ";
-    display: block;
-    height: 0;
-    clear: both;
+.event-page {
+    height: 43%;
+    margin-left: 65%;
+    margin-top: 5%
 }
 
 
@@ -314,29 +280,35 @@ tr:last-child {
     background-color: #f2f2f2;
 }
 
-.email {
+.join {
     font-family: 'Oxygen', sans-serif;
     font-weight: 100;
-    margin-top: 1%;
+    margin-top: 2%;
+    font-size: 1.2vw;
 }
 
 .email-enter {
     font-family: 'Oxygen', sans-serif;
     font-weight: 100;
     margin-top: 1%;
+    vertical-align: top
 }
 
-button {
-    width: 100px;
-    height: 30px;
+.submit {
+    width: 7%;
+    height: 25px;
+    text-align: center;
+    vertical-align: top;
     border: white 2px solid;
     background-color: #f2f2f2;
+    font-size: 0.7vw;
+    text-transform: lowercase;
 }
 
 input {
     border: none;
     border-bottom: black 2px solid;
-    height: 30px;
+    height: 20px;
 }
 
 input:focus {
@@ -353,4 +325,18 @@ input:focus {
 
 .footer .icons {
     margin-top: 3vh
+}
+
+
+/* footer icons */
+
+.icons {
+    margin: 2% 1%;
+    vertical-align: top;
+    display: inline''
+}
+
+.social-icon {
+    max-height: 20%;
+    max-width: 30%;
 }
