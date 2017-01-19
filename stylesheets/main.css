@@ -68,8 +68,10 @@ a:hover {
 
 /* body events */
 
-.bg {
-    background-image:url("../assets/frontpage/lights.jpg");
+#content {
+    background-image:url("../assets/frontpage/fam.jpg");
+    width:100%;
+    height:70%;
     background-size:100% 100%;
 }
 
@@ -77,9 +79,11 @@ a:hover {
     position: absolute;
     width: 100%;
     height: 80%;
+    margin:auto;
     padding-top: 40px;
     padding-bottom: 40px;
     background-color:#ffffff;
+    opacity:0.95
 }
 
 
@@ -132,7 +136,8 @@ tr:last-child {
 .event-page {
     height: 43%;
     margin-left: 62.5%;
-    margin-top: 5%
+    margin-top: 5%;
+    opacity:1;
 }
 
 
@@ -153,6 +158,7 @@ tr:last-child {
     font-weight: 100;
     margin-top: 2%;
     font-size: 1.2vw;
+    margin-bottom:1%;
 }
 
 .email-enter {
